@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,KAAK,EAAE,OAAO;CACf;;AACD,AAAA,8BAA8B,CAAC;EAC7B,KAAK,EAAE,OAAO;CACf;;AACD,AAAA,qBAAqB,CAAC;EACpB,KAAK,EAAE,OAAO;CACf;;AACD,AAAA,oBAAoB,CAAC,QAAQ;AAC7B,yBAAyB,CAAC,QAAQ,CAAC;EACjC,KAAK,EAAE,OAAO;CACf",
+    "sources": [
+        "hello-ionic.scss"
+    ],
+    "names": [],
+    "file": "hello-ionic.css"
+}
