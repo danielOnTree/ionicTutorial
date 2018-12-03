@@ -3,6 +3,7 @@ import {  Platform,
           ActionSheetController, 
           AlertController 
         } from 'ionic-angular';
+import { checkAndUpdateBinding } from '@angular/core/src/view/util';
 
 @Component({
   selector: 'page-hello-ionic',
@@ -145,5 +146,42 @@ export class HelloIonicPage {
         }
       })
       radio.present();
+    }
+    
+    doCheckbox() {
+      let checkbox = this.alertCtrl.create();
+      checkbox.setTitle('Which planets have u visited?');
+      checkbox.addInput({
+        type: 'checkbox',
+        label: 'Anus',
+        value: 'anus',
+        checked: false
+      });
+      checkbox.addInput({
+        type: 'checkbox',
+        label: 'Venus',
+        value: 'venus',
+        checked: false
+      });
+      checkbox.addInput({
+        type: 'checkbox',
+        label: 'jupiter',
+        value: 'jupiter',
+        checked: false
+      });
+      checkbox.addInput({
+        type: 'checkbox',
+        label: 'Earth',
+        value: 'earth',
+        checked: false
+      });
+      checkbox.addButton('Cancel');
+      checkbox.addButton({
+        text: 'Ok',
+        handler: data => {
+          console.log('Checkbox data', data);          
+        }
+      });
+      checkbox.present();    
     }
 }

@@ -4,11 +4,152 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Hello Ionic Tee</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="contact"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+    
   </ion-navbar>
 </ion-header>
 
 
-<ion-content padding class="action-sheets-basic-page">
+<ion-content padding class="action-sheets-basic-page card-background-page">
+  <ion-card>
+    <img src="../../assets/imgs/dream.jpg" />
+    <ion-fab right top>
+      <button ion-fab>
+        <ion-icon name="pin"></ion-icon>
+      </button>
+    </ion-fab>
+    <ion-item>
+      <ion-icon name="football" item-start large></ion-icon>
+      <h2>Museum of Football</h2>
+      <p>11 N. Way St, Madison, WI 53703</p>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="wine" item-start large></ion-icon>
+      <h2>Institute of Fine Cocktails</h2>
+      <p style="font-size:0.6em;">14 S. Hop Avenue, Madison WI 53703</p>
+    </ion-item>
+    <ion-item>
+      <span item-start>18 min</span>
+      <span item-start>(2.6 mi)</span>
+      <button ion-button icon-start clear item-end>
+        <ion-icon name="navigate"></ion-icon>
+        Start
+      </button>
+    </ion-item>
+  </ion-card>
+  
+  <ion-card>
+    <ion-item>
+      <ion-avatar item-start>
+        <ion-icon color="dark" name="contact" style="font-size: 2.5em;"></ion-icon>
+      </ion-avatar>
+      <h2>Marty McFly</h2>
+      <p>November 5, 1955</p>
+    </ion-item>
+    <img src="../../assets/imgs/dream.jpg" />
+    <ion-card-content>
+        <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>12 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>4 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col bottom right >
+        <ion-note>11h ago</ion-note>    
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  
+
+  <ion-card>
+    <img src="../../assets/imgs/dream.jpg" />
+    <div class="card-title">Island</div>
+    <div class="card-subtitle">01 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="../../assets/imgs/dream.jpg" />
+    <div class="card-title">Island</div>
+    <div class="card-subtitle">01 Listings</div>
+  </ion-card>
+
+  <ion-card >
+    <img src="../../assets/imgs/dream.jpg" alt="dream"/>
+    <ion-card-content>
+      <ion-card-title>
+        Thats my end of line in my livetime
+      </ion-card-title>
+      <p>
+        Thats the text bla bla u know`?
+      </p>
+      <button ion-button clear icon-start small>
+        <ion-icon name="star"></ion-icon>
+        Favorite
+      </button>
+      <button ion-button clear icon-end small>
+        <ion-icon name="star"></ion-icon>
+        Favorite
+      </button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <h1>Card Header</h1>
+    </ion-card-header>
+
+    <ion-card-content>
+      Thats my story of legend and truth in a place of fire and ice.
+    </ion-card-content>
+
+    <ion-list>
+      <button ion-item>
+        <ion-icon name="cart" item-start></ion-icon>
+        Shopping
+      </button>
+      <button ion-item>
+        <ion-icon name="medical" item-start></ion-icon>
+        Hospital
+      </button>
+      <button ion-item>
+        <ion-icon name="cafe" item-start></ion-icon>
+        Cafe
+      </button>
+      <button ion-item>
+        <ion-icon color="danger" name="paw" item-start></ion-icon>
+        Dog Park
+      </button>
+      <button ion-item>
+        <ion-icon name="beer" item-start></ion-icon>
+        Pub
+        </button>
+      <button ion-item>
+        <ion-icon name="planet" item-start></ion-icon>
+        Space
+      </button>
+    </ion-list>
+  </ion-card>
+
+
+
 
   <h3>Welcome to your first Ionic app!</h3>
 
@@ -28,4 +169,35 @@
   <button ion-button block (click)="doPromptAlert()">Do prompt alert</button>
   <button ion-button block (click)="doConfirm()">Do Confirm</button>
   <button ion-button block light (click)="doRadio()">Do Radio</button>
+  <button ion-button block light (click)="doCheckbox()">Do Checkbox</button>
+  <ion-item>
+    <ion-icon name="logo-twitter" item-start></ion-icon>
+    Followers
+    <ion-badge item-end>269k</ion-badge>
+  </ion-item>
+  <button ion-button icon-only clear>
+    <ion-icon name="home"></ion-icon>
+  </button>
+  <ion-list>
+      <ion-item>
+          Left Icon BUtton
+          <button ion-button outline item-end icon-end>
+              Left Icon
+            <ion-icon name="star"></ion-icon>            
+          </button>
+        </ion-item>
+    <ion-item>
+      Left Icon BUtton
+      <button ion-button outline item-end icon-start>
+        <ion-icon name="star"></ion-icon>
+        Left Icon
+      </button>
+    </ion-item>
+    <ion-item>
+      Left Icon BUtton
+      <button ion-button outline item-end>
+        Left Icon
+      </button>
+    </ion-item>
+  </ion-list>
 </ion-content>
