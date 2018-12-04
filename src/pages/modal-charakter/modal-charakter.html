@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>
+            Description
+        </ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="dismiss()">  
+                Cancel
+                <ion-icon name="md-close" showWhen="android, windows"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="{{character.image}}" />
+            </ion-avatar>
+            <h2>{{character.name}}</h2>
+            <p>{{character.quote}}</p>
+        </ion-item>
+        <ion-item *ngFor="let property of character['properties']">
+            {{property.title}}
+            <ion-note item-end>
+                {{property.note}}
+            </ion-note>
+        </ion-item>
+    </ion-list>
+</ion-content>
